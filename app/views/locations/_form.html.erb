@@ -11,15 +11,15 @@
     </div>
   <% end %>
 
-  <div class="field">
-    <%= f.text_field :address, placeholder: "Address (or approximate location)" %>
+  <div class="form-group">
+    <%= f.text_field :address, placeholder: "Address (or approximate location)", class: "form-control" %>
   </div>
 
-  <div class="field">
-    <%= f.text_field :city, placeholder: "City" %>
+  <div class="form-group">
+    <%= f.text_field :city, placeholder: "City", class: "form-control" %>
   </div>
 
   <div class="actions">
-    <%= f.submit %>
+    <%= f.submit "Check Buses", class: "btn btn-primary" %>
   </div>
 <% end %>

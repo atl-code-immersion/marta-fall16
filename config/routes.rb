@@ -1,4 +1,7 @@
 Rails.application.routes.draw do
+	
+  get 'train_tracker' => 'train_tracker#index'
+
   resources :locations
 
   root 'locations#new'

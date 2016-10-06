@@ -2,7 +2,7 @@
 
 <h2>You Are Currently Standing At...</h2>
 <p>
-  <%= @location.my_location %>
+  <i class="glyphicon glyphicon-home"></i> <%= @location.my_location %>
 </p>
 
 <h2>The Closest Buses Are...</h2>
@@ -15,9 +15,9 @@
 
 <% @nearby_buses.each do |bus| %>
 	<p>
-		<strong>Route:</strong> <%= bus["ROUTE"] %><br />
-		<strong>Vehicle:</strong> <%= bus["VEHICLE"] %><br />
-		<strong>Next Stop:</strong> <%= bus["TIMEPOINT"] %>
+		<i class="fa fa-road"></i> <strong>Route:</strong> <%= bus["ROUTE"] %><br />
+		<i class="fa fa-bus"></i> <strong>Vehicle:</strong> <%= bus["VEHICLE"] %><br />
+		<i class="fa fa-flag"></i> <strong>Next Stop:</strong> <%= bus["TIMEPOINT"] %>
 	</p>
 <% end %>
 

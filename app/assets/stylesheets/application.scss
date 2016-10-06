@@ -13,3 +13,15 @@
  *= require_tree .
  *= require_self
  */
+
+@import "bootstrap-sprockets";
+@import "bootstrap";
+@import "font-awesome";
+
+.center-it {
+	text-align: center;
+}
+
+.mbot-20 {
+	margin-bottom: 20px;
+}
